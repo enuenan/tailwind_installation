@@ -1,0 +1,11 @@
+step 1 : Run -> npm init -y
+step 2 : Run -> npm install tailwindcss
+step 3 : create a styles.css file and inside the file include these lines
+			@tailwind base;
+			@tailwind components;
+			@tailwind utilities;
+step 4 : open package.json and inside there replace the scripts object with these lines
+			"scripts": {
+    				"build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  			},
+step 5 : Run -> npm run build-css
